@@ -36,11 +36,13 @@ set ruler " Show ruler
 
 "au Filetype html,xml,xsl source ~/.vim/scripts/closetag.vim 
 "
-autocmd BufNewFile,BufRead *.cls set filetype=java
-autocmd BufNewFile,BufRead *.trigger set filetype=java
-autocmd BufNewFile,BufRead *.page.erb let b:eruby_subtype='html'|set filetype=eruby
-autocmd BufNewFile,BufRead *.cls.erb let b:eruby_subtype='java' |set filetype=eruby
-autocmd BufNewFile,BufRead *.object.erb let b:eruby_subtype='xml' |set filetype=eruby
+au BufNewFile,BufRead *.rhtml set syn=eruby "Ruby HTML
+au BufNewFile,BufRead *.ftl set syn=ftl "Freemarker
+au BufNewFile,BufRead *.pde set syn=pde "Processing
+au BufNewFile,BufRead Rakefile set syn=ruby "Ruby
+au BufNewFile,BufRead Gemfile set syn=ruby "Ruby
+au BufNewFile,BufRead Vagrantfile set syn=ruby "Ruby
+au BufNewFile,BufRead *.json set syn=javascript "JSON
 
 " show trailing whitespace ***************************************************
 set listchars=tab:>\ ,trail:-,extends:>,precedes:<,nbsp:+
