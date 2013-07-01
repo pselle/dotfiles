@@ -5,7 +5,7 @@ set nocompatible
 set nowrap
 set background=dark
 syntax on
-colorscheme solarized
+colorscheme spring
 
 set backspace=indent,eol,start
 set number " Show line numbers
@@ -17,8 +17,11 @@ call pathogen#helptags()
 call pathogen#runtime_append_all_bundles()
 filetype plugin indent on
 
-" Folding *********************************************************************
+" Backup **********************************************************************
+set nobackup "no backup
+set noswapfile "no swap file
 
+" Folding *********************************************************************
 set foldenable
 set foldmethod=syntax
 set foldlevelstart=99
