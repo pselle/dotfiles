@@ -3,7 +3,7 @@
   ci = commit
   st = status
   gap = add -p
-  gerritt = push origin HEAD:refs/for/master
+  gerrit = push origin HEAD:refs/for/master
   pub = "!f() { git push -u ${1:-origin} `git symbolic-ref HEAD`; }; f"
   l = log --graph --pretty=format:'%C(yellow)%h%C(cyan)%d%Creset %s %C(white)- %an, %ar%Creset'
   ll = log --stat --abbrev-commit
