@@ -5,7 +5,7 @@ set nocompatible
 set nowrap
 set background=dark
 syntax on
-colorscheme spring
+colorscheme railscasts_moffit
 
 set backspace=indent,eol,start
 set number " Show line numbers
