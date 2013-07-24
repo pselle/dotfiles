@@ -17,6 +17,9 @@ call pathogen#helptags()
 call pathogen#runtime_append_all_bundles()
 filetype plugin indent on
 
+" ctrlp
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+
 " Backup **********************************************************************
 set nobackup "no backup
 set noswapfile "no swap file

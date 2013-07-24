@@ -7,3 +7,6 @@
 [submodule "dotfiles/vim/bundle/vim-gitgutter"]
 	path = dotfiles/vim/bundle/vim-gitgutter
 	url = https://github.com/airblade/vim-gitgutter.git
+[submodule "dotfiles/vim/bundle/ctrlp.vim"]
+	path = dotfiles/vim/bundle/ctrlp.vim
+	url = https://github.com/kien/ctrlp.vim.git
