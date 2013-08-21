@@ -67,6 +67,12 @@ au BufNewFile,BufRead *.json set syn=javascript "JSON
 set listchars=tab:>\ ,trail:-,extends:>,precedes:<,nbsp:+
 set list
 
+" highlight trailing whitespace **********************************************
+highlight! link ExtraWhitespace Todo
+autocmd BufWinEnter,InsertLeave * match ExtraWhitespace /\s\+$/
+autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+autocmd BufWinLeave * call clearmatches()
+
 if has("gui_running")
   set guioptions=egmrt
   set guifont=Meslo\ LG\ M\ DZ:h12
