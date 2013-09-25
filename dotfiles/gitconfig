@@ -1,5 +1,6 @@
 [user]
   name = Mike Ball
+	email = mikedball@gmail.com
 [alias]
   co = checkout
   ci = commit
@@ -31,3 +32,5 @@
   added = green
   changed = red
   untracked = cyan
+[github]
+	user = mdb

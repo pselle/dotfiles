@@ -1,7 +1,6 @@
 call pathogen#helptags()
 call pathogen#runtime_append_all_bundles()
 
-set nocompatible
 set nowrap
 set background=dark
 syntax on
@@ -10,12 +9,30 @@ colorscheme railscasts_moffit
 set backspace=indent,eol,start
 set number " Show line numbers
 
+
+" Vundle ********************************************************************
+set nocompatible
+filetype off
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" let Vundle manage Vundle
+Bundle 'gmarik/vundle'
+
+"Bundles here:
+Bundle 'airblade/vim-gitgutter'
+Bundle 'scrooloose/syntastic'
+Bundle 'scrooloose/nerdtree'
+Bundle 'kien/ctrlp.vim'
+
+filetype plugin indent on
+
 " Pathogen ********************************************************************
 
 " filetype off
 call pathogen#helptags()
 call pathogen#runtime_append_all_bundles()
-filetype plugin indent on
 
 " ctrlp
 set runtimepath^=~/.vim/bundle/ctrlp.vim
