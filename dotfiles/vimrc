@@ -78,6 +78,7 @@ au BufNewFile,BufRead Rakefile set syn=ruby "Ruby
 au BufNewFile,BufRead Gemfile set syn=ruby "Ruby
 au BufNewFile,BufRead *.jbuilder set syn=ruby "Ruby
 au BufNewFile,BufRead Vagrantfile set syn=ruby "Ruby
+au BufNewFile,BufRead *.pp set syn=ruby "Ruby
 au BufNewFile,BufRead *.json set syn=javascript "JSON
 
 " show trailing whitespace ***************************************************
