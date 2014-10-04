@@ -4,6 +4,8 @@ source ~/dotfiles/prompt.sh
 
 export RSYNC_RSH="ssh"
 
+export EDITOR=vi
+
 alias rsync='rsync -v --progress --partial'
 
 alias less="less -R"
