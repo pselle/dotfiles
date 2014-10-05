@@ -35,3 +35,5 @@
   untracked = cyan
 [github]
   user = mdb
+[core]
+  editor = /usr/bin/vim
