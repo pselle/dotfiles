@@ -1,6 +1,4 @@
-if &compatible
-  set nocompatible
-end
+set nocompatible
 
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim/
@@ -12,3 +10,6 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
 Plugin 'kien/ctrlp.vim'
 Plugin 'airblade/vim-gitgutter'
+
+call vundle#end()
+filetype plugin indent on
