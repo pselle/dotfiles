@@ -12,3 +12,6 @@ alias less="less -R"
 
 export GREP_OPTIONS='--color=auto'
 export GREP_COLOR='1;32'
+
+ # Load RVM into a shell session *as a function*
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
