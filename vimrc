@@ -58,3 +58,6 @@ au BufNewFile,BufRead *.builder set syn=ruby
 au BufNewFile,BufRead *.jbuilder set syn=ruby
 au BufNewFile,BufRead *.pp set syn=ruby
 au BufNewFile,BufRead *.json set syn=javascript
+
+" gg=G to reformat ugly XML
+au FileType xml setlocal equalprg=xmllint\ --format\ --recover\ -\ 2>/dev/null
