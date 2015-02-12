@@ -21,6 +21,7 @@ set ttymouse=xterm2
 set mouse=a
 set nobackup
 set noswapfile
+set paste
 
 " Searching
 set hlsearch
