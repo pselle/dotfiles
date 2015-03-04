@@ -5,6 +5,8 @@ source ~/dotfiles/prompt.sh
 export RSYNC_RSH="ssh"
 
 export EDITOR=vi
+export PATH="~/bin:$PATH"
+
 
 alias rsync='rsync -v --progress --partial'
 
