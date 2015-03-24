@@ -6,6 +6,7 @@ export RSYNC_RSH="ssh"
 
 export EDITOR=vi
 export PATH="~/bin:$PATH"
+export PATH="$HOME/Library/Haskell/bin:$PATH"
 
 
 alias rsync='rsync -v --progress --partial'
