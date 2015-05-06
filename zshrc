@@ -49,7 +49,10 @@ plugins=(git)
 
 # User configuration
 
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/mball0001/.rvm/gems/jruby-1.7.19/bin:/Users/mball0001/.rvm/gems/jruby-1.7.19@global/bin:/Users/mball0001/.rvm/rubies/jruby-1.7.19/bin:/Users/mball0001/.rvm/bin"
+# Load RVM into a shell session *as a function*
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -78,3 +81,6 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
