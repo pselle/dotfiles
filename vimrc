@@ -84,3 +84,6 @@ let g:rbpt_max = len(g:rbpt_colorpairs)
 
 " gg=G to reformat ugly XML
 au FileType xml setlocal equalprg=xmllint\ --format\ --recover\ -\ 2>/dev/null
+
+"jump to a matching opening or closing parenthesis, square bracket or a curly brace
+noremap % v%
