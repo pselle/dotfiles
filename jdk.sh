@@ -1,17 +1,7 @@
-function jdk() {
-  if [ $# -ne 0 ]; then
-    removeFromPath '/System/Library/Frameworks/JavaVM.framework/Home/bin'
+export JAVA_6_HOME=/System/Library/Frameworks/JavaVM.framework/Home
+export JAVA_8_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home
 
-    if [ -n "${JAVA_HOME+x}" ]; then
-      removeFromPath $JAVA_HOME
-    fi
+export JAVA_HOME=$JAVA_8_HOME
 
-    export JAVA_HOME=`/usr/libexec/java_home -v $@`
-
-    export PATH=$JAVA_HOME/bin:$PATH
-  fi
-}
-
-function removeFromPath() {
-  export PATH=$(echo $PATH | sed -E -e "s;:$1;;" -e "s;$1:?;;")
-}
+alias java6='export JAVA_HOME=$JAVA_6_HOME'
+alias java8='export JAVA_HOME=$JAVA_8_HOME'
