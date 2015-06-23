@@ -92,3 +92,6 @@ export PATH=$PATH:/usr/local/opt/go/libexec/bin
 
 # set GOPATH
 export GOPATH=~/dev/go
+
+# add GOPATH/bin to PATH
+export PATH=$PATH:$GOPATH/bin
