@@ -16,6 +16,7 @@ set number
 set showcmd
 set ruler
 set listchars=tab:>\ ,trail:-,extends:>,precedes:<,nbsp:+
+autocmd FileType go set listchars=tab:\ \ ,trail:·,extends:>,precedes:<
 set list
 set ttymouse=xterm2
 set mouse=a
