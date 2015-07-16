@@ -29,6 +29,9 @@ set hlsearch
 set ignorecase
 nmap <silent> ,/ :nohlsearch<CR>
 
+" Golang
+let g:go_fmt_command = "goimports"
+
 " highlight trailing whitespace
 highlight! link ExtraWhitespace Todo
 autocmd BufWinEnter,InsertLeave * match ExtraWhitespace /\s\+$/
