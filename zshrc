@@ -95,3 +95,6 @@ export GOPATH=~/dev/go
 
 # add GOPATH/bin to PATH
 export PATH=$PATH:$GOPATH/bin
+
+# homebrew wants this
+export PATH="/usr/local/sbin:$PATH"
