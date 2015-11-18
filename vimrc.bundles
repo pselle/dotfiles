@@ -27,6 +27,7 @@ Plugin 'tpope/vim-sexp-mappings-for-regular-people'
 " Go
 Plugin 'benmills/vim-golang-alternate'
 Plugin 'fatih/vim-go'
+Plugin 'b4b4r07/vim-hcl'
 
 call vundle#end()
 filetype plugin indent on
