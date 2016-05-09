@@ -1,7 +1,27 @@
-" Vundle
-if filereadable(expand("~/.vimrc.bundles"))
-  source ~/.vimrc.bundles
-endif
+" Load vim-plug
+call plug#begin('~/.vim/plugged')
+
+Plug 'kien/ctrlp.vim'
+Plug 'airblade/vim-gitgutter'
+Plug 'kien/rainbow_parentheses.vim'
+Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/syntastic'
+
+" Scala
+Plug 'derekwyatt/vim-scala'
+
+" Docker
+Plug 'ekalinin/Dockerfile.vim'
+
+" Go
+Plug 'benmills/vim-golang-alternate'
+Plug 'fatih/vim-go'
+
+" HCL
+Plug 'fatih/vim-hclfmt'
+Plug 'b4b4r07/vim-hcl'
+
+call plug#end()
 
 syntax on
 
@@ -86,7 +106,7 @@ let g:rbpt_colorpairs = [
       \ ]
 let g:rbpt_max = len(g:rbpt_colorpairs)
 
-" gg=G to reformat ugly XML
+"gg=G to reformat ugly XML
 au FileType xml setlocal equalprg=xmllint\ --format\ --recover\ -\ 2>/dev/null
 
 "jump to a matching opening or closing parenthesis, square bracket or a curly brace
