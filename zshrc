@@ -83,10 +83,6 @@ source $ZSH/oh-my-zsh.sh
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
-# Load RVM into a shell session *as a function*
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-
 # add go to PATH
 export PATH=$PATH:/usr/local/opt/go/libexec/bin
 
@@ -98,3 +94,16 @@ export PATH=$PATH:$GOPATH/bin
 
 # homebrew wants this
 export PATH="/usr/local/sbin:$PATH"
+
+# Load RVM into a shell session *as a function*
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+# add the AppCatalyst Daemon to system path
+export PATH=$PATH:/opt/vmware/appcatalyst/bin
+
+# add aliases to path
+export PATH=$PATH:~/bin
+
+source ~/bin/aliases
+
+eval $(docker-machine env default)
