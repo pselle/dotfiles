@@ -36,7 +36,6 @@ set number
 set showcmd
 set ruler
 set listchars=tab:>\ ,trail:-,extends:>,precedes:<,nbsp:+
-autocmd FileType go set listchars=tab:\ \ ,trail:·,extends:>,precedes:<
 set list
 set ttymouse=xterm2
 set mouse=a
@@ -51,6 +50,10 @@ nmap <silent> ,/ :nohlsearch<CR>
 
 " Golang
 let g:go_fmt_command = "goimports"
+autocmd FileType go set listchars=tab:\ \ ,trail:·,extends:>,precedes:<
+
+"gg=G to reformat ugly XML
+au FileType xml setlocal equalprg=xmllint\ --format\ --recover\ -\ 2>/dev/null
 
 " highlight trailing whitespace
 highlight! link ExtraWhitespace Todo
@@ -65,12 +68,6 @@ match OverLength /\%81v./
 map <C-l> :tabn<CR>
 map <C-h> :tabp<CR>
 map <C-n> :tabnew<CR>
-
-" CTRL-P opens in tab
-let g:ctrlp_prompt_mappings = {
-  \ 'AcceptSelection("e")': [],
-  \ 'AcceptSelection("t")': ['<cr>', '<c-m>'],
-  \ }
 
 au BufNewFile,BufRead *.rhtml set syn=eruby
 au BufNewFile,BufRead *.ftl set syn=ftl
@@ -89,25 +86,31 @@ autocmd VimEnter * RainbowParenthesesToggle
 autocmd Syntax * RainbowParenthesesLoadRound
 autocmd Syntax * RainbowParenthesesLoadSquare
 autocmd Syntax * RainbowParenthesesLoadBraces
+
 let g:rbpt_colorpairs = [
-      \ ['brown',       'RoyalBlue3'],
-      \ ['Darkblue',    'SeaGreen3'],
-      \ ['darkgreen',   'firebrick3'],
-      \ ['darkcyan',    'RoyalBlue3'],
-      \ ['darkred',     'SeaGreen3'],
-      \ ['darkmagenta', 'DarkOrchid3'],
-      \ ['brown',       'firebrick3'],
-      \ ['darkmagenta', 'DarkOrchid3'],
-      \ ['Darkblue',    'firebrick3'],
-      \ ['darkgreen',   'RoyalBlue3'],
-      \ ['darkcyan',    'SeaGreen3'],
-      \ ['darkred',     'DarkOrchid3'],
-      \ ['red',         'firebrick3'],
-      \ ]
+  \ ['brown',       'RoyalBlue3'],
+  \ ['Darkblue',    'SeaGreen3'],
+  \ ['darkgreen',   'firebrick3'],
+  \ ['darkcyan',    'RoyalBlue3'],
+  \ ['darkred',     'SeaGreen3'],
+  \ ['darkmagenta', 'DarkOrchid3'],
+  \ ['brown',       'firebrick3'],
+  \ ['darkmagenta', 'DarkOrchid3'],
+  \ ['Darkblue',    'firebrick3'],
+  \ ['darkgreen',   'RoyalBlue3'],
+  \ ['darkcyan',    'SeaGreen3'],
+  \ ['darkred',     'DarkOrchid3'],
+  \ ['red',         'firebrick3'],
+  \ ]
+
+" CTRL-P opens in tab
+let g:ctrlp_prompt_mappings = {
+  \ 'AcceptSelection("e")': [],
+  \ 'AcceptSelection("t")': ['<cr>', '<c-m>'],
+  \ }
+
 let g:rbpt_max = len(g:rbpt_colorpairs)
+let g:syntastic_go_checkers = ['go', 'golint', 'errcheck']
 
-"gg=G to reformat ugly XML
-au FileType xml setlocal equalprg=xmllint\ --format\ --recover\ -\ 2>/dev/null
-
-"jump to a matching opening or closing parenthesis, square bracket or a curly brace
+" jump to a matching opening or closing parenthesis, square bracket or a curly brace
 noremap % v%
