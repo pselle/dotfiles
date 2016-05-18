@@ -21,6 +21,9 @@ Plug 'fatih/vim-go'
 Plug 'fatih/vim-hclfmt'
 Plug 'b4b4r07/vim-hcl'
 
+" cfengine
+Plug 'neilhwatson/vim_cf3'
+
 call plug#end()
 
 syntax on
