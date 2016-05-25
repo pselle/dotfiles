@@ -1,6 +1,6 @@
 # My dotfiles
 
-(the Pam edition, forked from [mdb](https://github.com/mdb).
+(the Pam edition, forked from [mdb](https://github.com/mdb))
 
 My profile, vim, dotfiles, etc.
 
