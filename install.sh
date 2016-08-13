@@ -10,6 +10,7 @@ ln -s ${DOTFILES}/oh-my-zsh/themes/mdb.zsh-theme ${HOME}/.oh-my-zsh/themes/mdb.z
 ln -s ${DOTFILES}/tmux.conf ${HOME}/.tmux.conf
 ln -s ${DOTFILES}/gitconfig ${HOME}/.gitconfig
 ln -s ${DOTFILES}/vimrc ${HOME}/.vimrc
+ln -s ${DOTFILES}/jshintrc ${HOME}/.jshintrc
 
 # install vim-plug
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
