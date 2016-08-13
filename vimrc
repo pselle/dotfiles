@@ -114,6 +114,7 @@ let g:ctrlp_prompt_mappings = {
 
 let g:rbpt_max = len(g:rbpt_colorpairs)
 let g:syntastic_go_checkers = ['go', 'golint', 'errcheck']
+let g:syntastic_javascript_checkers = ['eslint']
 
 " jump to a matching opening or closing parenthesis, square bracket or a curly brace
 noremap % v%
