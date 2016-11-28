@@ -24,6 +24,10 @@ Plug 'b4b4r07/vim-hcl'
 " cfengine
 Plug 'neilhwatson/vim_cf3'
 
+" pug/stylus
+Plug 'digitaltoad/vim-pug'
+Plug 'wavded/vim-stylus'
+
 call plug#end()
 
 syntax on
