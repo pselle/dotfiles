@@ -87,6 +87,7 @@ au BufNewFile,BufRead *.builder set syn=ruby
 au BufNewFile,BufRead *.jbuilder set syn=ruby
 au BufNewFile,BufRead *.pp set syn=ruby
 au BufNewFile,BufRead *.json set syn=javascript
+au BufNewFile,BufRead *.bats set syn=sh
 
 " rainbow_parentheses.vim
 autocmd VimEnter * RainbowParenthesesToggle
