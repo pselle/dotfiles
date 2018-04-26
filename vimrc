@@ -10,6 +10,9 @@ Plug 'scrooloose/syntastic'
 " Scala
 Plug 'derekwyatt/vim-scala'
 
+" Vue.js
+Plug 'posva/vim-vue'
+
 " Docker
 Plug 'ekalinin/Dockerfile.vim'
 
