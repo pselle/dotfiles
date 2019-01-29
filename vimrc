@@ -13,6 +13,9 @@ Plug 'derekwyatt/vim-scala'
 " Vue.js
 Plug 'posva/vim-vue'
 
+" Typescript
+Plug 'leafgarland/typescript-vim'
+
 " Docker
 Plug 'ekalinin/Dockerfile.vim'
 
