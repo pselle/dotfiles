@@ -35,6 +35,6 @@
   changed = red
   untracked = cyan
 [github]
-  user = mdb
+  user = pselle
 [core]
   editor = /usr/bin/vim
