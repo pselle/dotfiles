@@ -6,6 +6,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'kien/rainbow_parentheses.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/syntastic'
+Plug 'tpope/vim-sleuth'
 
 " Scala
 Plug 'derekwyatt/vim-scala'
@@ -37,29 +38,6 @@ Plug 'wavded/vim-stylus'
 call plug#end()
 
 syntax on
-
-set visualbell
-set nowrap
-set background=dark
-set softtabstop=2
-set shiftwidth=2
-set tabstop=2
-set expandtab
-set number
-set showcmd
-set ruler
-set listchars=tab:>\ ,trail:-,extends:>,precedes:<,nbsp:+
-set list
-set ttymouse=xterm2
-set mouse=a
-set nobackup
-set noswapfile
-set paste
-
-" Searching
-set hlsearch
-set ignorecase
-nmap <silent> ,/ :nohlsearch<CR>
 
 " Golang
 let g:go_fmt_command = "goimports"
@@ -129,3 +107,26 @@ let g:syntastic_javascript_checkers = ['eslint']
 
 " jump to a matching opening or closing parenthesis, square bracket or a curly brace
 noremap % v%
+
+set visualbell
+set nowrap
+set background=dark
+set softtabstop=2
+set shiftwidth=2
+set tabstop=2
+set expandtab
+set number
+set showcmd
+set ruler
+set listchars=tab:>\ ,trail:-,extends:>,precedes:<,nbsp:+
+set list
+set ttymouse=xterm2
+set mouse=a
+set nobackup
+set noswapfile
+set paste
+
+" Searching
+set hlsearch
+set ignorecase
+nmap <silent> ,/ :nohlsearch<CR>
