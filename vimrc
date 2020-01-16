@@ -11,6 +11,9 @@ Plug 'tpope/vim-sleuth'
 " Scala
 Plug 'derekwyatt/vim-scala'
 
+" Elm
+Plug 'andys8/vim-elm-syntax'
+
 " Vue.js
 Plug 'posva/vim-vue'
 
