@@ -38,6 +38,9 @@ Plug 'neilhwatson/vim_cf3'
 Plug 'digitaltoad/vim-pug'
 Plug 'wavded/vim-stylus'
 
+" powershell
+Plug 'PProvost/vim-ps1'
+
 call plug#end()
 
 syntax on
