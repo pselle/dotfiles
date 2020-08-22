@@ -5,10 +5,6 @@
   co = checkout
   ci = commit
   st = status
-  gap = add -p
-  gmaster = push origin HEAD:refs/for/master
-  grc = push origin HEAD:refs/for/rc
-  gdev = push origin HEAD:refs/for/development
   pub = "!f() { git push -u ${1:-origin} `git symbolic-ref HEAD`; }; f"
   l = log --graph --pretty=format:'%C(yellow)%h%C(cyan)%d%Creset %s %C(white)- %an, %ar%Creset'
   ll = log --stat --abbrev-commit
@@ -39,3 +35,5 @@
   user = mdb
 [core]
   editor = /usr/bin/vim
+[init]
+  defaultBranch = main
