@@ -126,7 +126,6 @@ set showcmd
 set ruler
 set listchars=tab:>\ ,trail:-,extends:>,precedes:<,nbsp:+
 set list
-set ttymouse=xterm2
 set mouse=a
 set nobackup
 set noswapfile
