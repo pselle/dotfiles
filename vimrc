@@ -62,6 +62,9 @@ autocmd BufWinLeave * call clearmatches()
 highlight OverLength ctermbg=Magenta ctermfg=white guibg=#592929
 match OverLength /\%81v./
 
+" Show dotfiles in NERDTree
+let NERDTreeShowHidden=1
+
 map <C-l> :tabn<CR>
 map <C-h> :tabp<CR>
 map <C-n> :tabnew<CR>
