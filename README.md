@@ -2,7 +2,7 @@
 
 My profile, vim, dotfiles, etc.
 
-Largely stolen from and/or inspired by [lolindrath](https://github.com/lolindrath), [justincampbell](https://github.com/justincampbell), and [matschaffer](https://github.com/matschaffer).
+Largely stolen from and/or inspired by [lolindrath](https://github.com/lolindrath), [justincampbell](https://github.com/justincampbell), [matschaffer](https://github.com/matschaffer), [fatih](https://github.com/fatih/dotfiles), and plenty of colleagues over the years.
 
 ## Installation
 
