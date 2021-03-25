@@ -44,6 +44,8 @@ Plug 'wavded/vim-stylus'
 " powershell
 Plug 'PProvost/vim-ps1'
 
+Plug 'ruanyl/vim-gh-line'
+
 call plug#end()
 
 syntax on
