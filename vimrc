@@ -31,6 +31,9 @@ Plug 'fatih/vim-go'
 Plug 'fatih/vim-hclfmt'
 Plug 'b4b4r07/vim-hcl'
 
+" Rego
+Plug 'tsandall/vim-rego'
+
 " cfengine
 Plug 'neilhwatson/vim_cf3'
 
