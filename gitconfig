@@ -38,3 +38,5 @@
   user = pselle
 [core]
   editor = /usr/bin/vim
+[url "git@github.com:"]
+	insteadOf = https://github.com/
