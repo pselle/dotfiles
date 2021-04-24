@@ -6,7 +6,7 @@ Largely stolen from and/or inspired by [lolindrath](https://github.com/lolindrat
 
 ## Installation
 
-This assumes you're using [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
+This assumes you're using [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh).
 
 ```
 git clone https://github.com/mdb/dotfiles ~/dotfiles
