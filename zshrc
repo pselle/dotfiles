@@ -1,8 +1,6 @@
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/mball0001/.oh-my-zsh
 
-source ~/dotfiles/jdk.sh
-
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
@@ -49,39 +47,7 @@ ZSH_THEME="mdb"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git)
 
-# User configuration
-
-# export MANPATH="/usr/local/man:$MANPATH"
-
 source $ZSH/oh-my-zsh.sh
-
-# You may need to manually set your language environment
-# export LANG=en_US.UTF-8
-
-# Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
-
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
-
-# ssh
-# export SSH_KEY_PATH="~/.ssh/dsa_id"
-
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
 
 # add go to PATH
 export PATH=$PATH:/usr/local/opt/go/libexec/bin
@@ -95,15 +61,7 @@ export PATH=$PATH:$GOPATH/bin
 # homebrew wants this
 export PATH="/usr/local/sbin:$PATH"
 
-# Load RVM into a shell session *as a function*
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-
-# add the AppCatalyst Daemon to system path
-export PATH=$PATH:/opt/vmware/appcatalyst/bin
-
 # add aliases to path
 export PATH=$PATH:~/bin
 
 source ~/bin/aliases
-
-eval $(docker-machine env default)
