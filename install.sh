@@ -9,6 +9,13 @@ fi
 
 brew bundle
 
+if [ ! "${HOME}/.oh-my-zsh" ]; then
+  sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+fi
+
+mv "${HOME}/.bashrc" "${HOME}/.bashrc.bak" 2>/dev/null
+mv "${HOME}/.zshrc" "${HOME}/.zshrc.bak" 2>/dev/null
+
 DOTFILES=${HOME}/dotfiles
 
 ln -s "${DOTFILES}/zshrc" "${HOME}/.zshrc"
@@ -22,7 +29,7 @@ if [ ! -d "${HOME}/bin" ]; then
   mkdir -p "${HOME}/bin";
 fi
 
-ln -s "${DOTFILES}/aliases" "${HOME}/aliases"
+ln -s "${DOTFILES}/aliases" "${HOME}/bin/aliases"
 
 # install vim-plug
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
