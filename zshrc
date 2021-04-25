@@ -65,3 +65,5 @@ export PATH="/usr/local/sbin:$PATH"
 export PATH=$PATH:~/bin
 
 source ~/bin/aliases
+
+ZSH_DISABLE_COMPFIX=true
