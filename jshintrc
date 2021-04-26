@@ -1,0 +1,23 @@
+{
+  "asi": true,
+  "browser": true,
+  "node": true,
+  "esversion": 6,
+  "jquery": true,
+  "strict": false,
+  "undef": true,
+  "predef": [
+    "define",
+    "Backbone",
+    "_",
+    "it",
+    "expect",
+    "before",
+    "after",
+    "spyOn",
+    "describe",
+    "beforeEach",
+    "afterEach",
+    "$"
+  ]
+}
