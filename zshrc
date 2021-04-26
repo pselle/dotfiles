@@ -49,25 +49,25 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
-# add go to PATH
-export PATH=$PATH:/usr/local/opt/go/libexec/bin
-
-# set GOPATH
-export GOPATH=~/dev/go
-
-# add GOPATH/bin to PATH
-export PATH=$PATH:$GOPATH/bin
-
 # homebrew wants this
 export PATH="/usr/local/sbin:$PATH"
 
-# add aliases to path
+# add bin dir to path
 export PATH=$PATH:~/bin
 
-source ~/bin/aliases
+# aliases
+source "$HOME/dotfiles/aliases"
 
 ZSH_DISABLE_COMPFIX=true
 
+# Node
+if [ ! -d "${HOME}/n" ]; then
+  mkdir -p "${HOME}/n";
+fi
+export N_PREFIX="$HOME"
+export PATH="$N_PREFIX/bin:$PATH"
+
+# Ruby
 export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
 export PATH="/usr/local/opt/ruby/bin:/usr/local/lib/ruby/gems/2.7.0/bin:$PATH"
 export PATH="$HOME/.rbenv/bin:$PATH"
