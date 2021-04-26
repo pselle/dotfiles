@@ -1,1 +1,1 @@
-# Put alias here is wanted
+alias ll="ls -la"
