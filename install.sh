@@ -37,9 +37,9 @@ fi
 ln -s "${DOTFILES}/aliases" "${HOME}/bin/aliases"
 
 # install vim-plug
-curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+# curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+#   https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
-vim +PlugInstall +qall
-vim +GoInstallBinaries +qall
-vim +GoUpdateBinaries +qall
+# vim +PlugInstall +qall
+# vim +GoInstallBinaries +qall
+# vim +GoUpdateBinaries +qall
