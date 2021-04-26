@@ -67,3 +67,9 @@ export PATH=$PATH:~/bin
 source ~/bin/aliases
 
 ZSH_DISABLE_COMPFIX=true
+
+export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
+export PATH="/usr/local/opt/ruby/bin:/usr/local/lib/ruby/gems/2.7.0/bin:$PATH"
+export PATH="$HOME/.rbenv/bin:$PATH"
+
+eval "$(rbenv init -)"

@@ -1,6 +1,6 @@
 [user]
-  name = Mike Ball
-  email = mikedball@gmail.com
+  name = Pam Selle
+  email = pam@abstract.com
 [alias]
   co = checkout
   ci = commit
@@ -32,7 +32,7 @@
   changed = red
   untracked = cyan
 [github]
-  user = mdb
+  user = pselle
 [core]
   editor = /usr/local/bin/nvim
 [init]
