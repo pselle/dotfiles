@@ -73,3 +73,6 @@ export PATH="/usr/local/opt/ruby/bin:/usr/local/lib/ruby/gems/2.7.0/bin:$PATH"
 export PATH="$HOME/.rbenv/bin:$PATH"
 
 eval "$(rbenv init -)"
+
+# Put things not going into dotfiles here
+source $HOME/dotfiles/secret
