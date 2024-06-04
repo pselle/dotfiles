@@ -7,6 +7,9 @@ export ZSH=${HOME}/.oh-my-zsh
 # time that oh-my-zsh is loaded.
 ZSH_THEME="mdb"
 
+# Homebrew
+eval $(/opt/homebrew/bin/brew shellenv)
+
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
@@ -47,6 +50,8 @@ ZSH_THEME="mdb"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git)
 
+ZSH_DISABLE_COMPFIX=true
+
 source $ZSH/oh-my-zsh.sh
 
 # homebrew wants this
@@ -58,8 +63,6 @@ export PATH=$PATH:~/bin
 # aliases
 source "$HOME/dotfiles/aliases"
 
-ZSH_DISABLE_COMPFIX=true
-
 # Node
 if [ ! -d "${HOME}/n" ]; then
   mkdir -p "${HOME}/n";
@@ -67,12 +70,27 @@ fi
 export N_PREFIX="$HOME"
 export PATH="$N_PREFIX/bin:$PATH"
 
-# Ruby
-export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
-export PATH="/usr/local/opt/ruby/bin:/usr/local/lib/ruby/gems/2.7.0/bin:$PATH"
-export PATH="$HOME/.rbenv/bin:$PATH"
+# MySQL
+export PATH="/opt/homebrew/opt/mysql@5.7/bin:$PATH"
+# If needed
+#export LDFLAGS="-L/opt/homebrew/opt/mysql@5.7/lib"
+#export CPPFLAGS="-I/opt/homebrew/opt/mysql@5.7/include"
+# brew services start mysql@5.7
+export PATH="$PATH:$HOME/go/bin"
 
-eval "$(rbenv init -)"
+# Ruby
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init - zsh)"
+export PATH="$HOME/.local/share/gem/ruby/3.1.0/bin:$PATH"
+
 
 # Put things not going into dotfiles here
 source $HOME/dotfiles/secret
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# soroban completion
+source <(soroban completion --shell bash)
+
+export PATH="$PATH:/usr/local/bin"

@@ -33,8 +33,6 @@
   untracked = cyan
 [github]
   user = pselle
-[core]
-  editor = /usr/local/bin/nvim
 [init]
   defaultBranch = main
   editor = /usr/bin/vim
